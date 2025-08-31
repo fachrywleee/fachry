@@ -18,7 +18,7 @@ export default function Home() {
         animate="animate"
         exit="exit"
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="min-h-screen bg-gradient-to-br from-white via-blue-100 to-blue-300 transition-colors duration-500"
+        className="relative min-h-screen animated-gradient transition-colors duration-500"
       >
         {/* Navbar */}
         <nav className="sticky top-0 z-50 bg-white/80 border-b border-blue-200 shadow-sm backdrop-blur transition-colors duration-500">
@@ -33,9 +33,30 @@ export default function Home() {
               />
             </Link>
             <ul className="flex gap-8 text-blue-900 font-semibold text-xl">
-              <li><a href="#about" className="hover:underline transition-colors">About</a></li>
-              <li><a href="#skills" className="hover:underline transition-colors">Skills</a></li>
-              <li><a href="#contact" className="hover:underline transition-colors">Contact</a></li>
+              <li>
+                <a
+                  href="#about"
+                  className="hover:underline transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  className="hover:underline transition-colors"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:underline transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -67,11 +88,13 @@ export default function Home() {
                 </h2>
                 <div className="bg-blue-50 rounded-xl p-8 shadow transition-colors duration-500">
                   <p className="text-lg text-blue-800 leading-relaxed mb-4 transition-colors duration-500">
-                    Welcome! I&apos;m a highschool student who loves creating simple, elegant solutions. 
-                    I enjoy building clean user experiences and tackling interesting problems.
+                    Welcome! I&apos;m a highschool student who loves creating
+                    simple, elegant solutions. I enjoy building clean user
+                    experiences and tackling interesting problems.
                   </p>
                   <p className="text-lg text-blue-800 leading-relaxed transition-colors duration-500">
-                    When I&apos;m not coding, I play games and hang out with my friends!
+                    When I&apos;m not coding, I play games and hang out with my
+                    friends!
                   </p>
                 </div>
               </section>
@@ -82,13 +105,15 @@ export default function Home() {
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 rounded-xl p-6 shadow transition-colors duration-500">
-                    <h3 className="text-xl font-semibold text-blue-900 mb-4 transition-colors duration-500">Frontend</h3>
+                    <h3 className="text-xl font-semibold text-blue-900 mb-4 transition-colors duration-500">
+                      Frontend
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       {[
-                        { name: 'React', url: 'https://react.dev/' },
-                        { name: 'Next.js', url: 'https://nextjs.org/' },
-                        { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
-                        { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' }
+                        { name: "React", url: "https://react.dev/" },
+                        { name: "Next.js", url: "https://nextjs.org/" },
+                        { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+                        { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
                       ].map((skill) => (
                         <a
                           key={skill.name}
@@ -103,12 +128,14 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-blue-50 rounded-xl p-6 shadow transition-colors duration-500">
-                    <h3 className="text-xl font-semibold text-blue-900 mb-4 transition-colors duration-500">Backend</h3>
+                    <h3 className="text-xl font-semibold text-blue-900 mb-4 transition-colors duration-500">
+                      Backend
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       {[
-                        { name: 'Node.js', url: 'https://nodejs.org/' },
-                        { name: 'Laravel', url: 'https://laravel.com/' },
-                        { name: 'Express.js', url: 'https://expressjs.com/' }
+                        { name: "Node.js", url: "https://nodejs.org/" },
+                        { name: "Laravel", url: "https://laravel.com/" },
+                        { name: "Express.js", url: "https://expressjs.com/" },
                       ].map((skill) => (
                         <a
                           key={skill.name}
