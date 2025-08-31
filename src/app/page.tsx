@@ -21,9 +21,12 @@ export default function Home() {
         className="relative min-h-screen animated-gradient transition-colors duration-500"
       >
         {/* Navbar */}
-        <nav className="sticky top-0 z-50 bg-white/80 border-b border-blue-200 shadow-sm backdrop-blur transition-colors duration-500">
-          <div className="container mx-auto px-0 py-3 flex items-center justify-between text-base">
-            <Link href="/" className="flex items-center">
+        <nav className="sticky top-0 z-50 bg-gradient-to-r from-blue-100 via-white to-blue-100/80 border-b border-blue-200 shadow-lg backdrop-blur-lg rounded-b-xl transition-colors duration-500">
+          <div className="container mx-auto px-4 py-4 flex items-center justify-between text-xl">
+            <Link
+              href="/"
+              className="flex items-center hover:scale-105 transition-transform duration-200"
+            >
               <Image
                 src="/logo.png"
                 alt="Fachry Logo"
@@ -32,11 +35,11 @@ export default function Home() {
                 className="mr-2"
               />
             </Link>
-            <ul className="flex gap-8 text-blue-900 font-semibold text-xl">
+            <ul className="flex gap-10 text-blue-900 font-bold">
               <li>
                 <a
                   href="#about"
-                  className="hover:underline transition-colors"
+                  className="hover:text-blue-700 hover:underline transition-colors duration-200"
                 >
                   About
                 </a>
@@ -44,7 +47,7 @@ export default function Home() {
               <li>
                 <a
                   href="#skills"
-                  className="hover:underline transition-colors"
+                  className="hover:text-blue-700 hover:underline transition-colors duration-200"
                 >
                   Skills
                 </a>
@@ -52,7 +55,7 @@ export default function Home() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:underline transition-colors"
+                  className="hover:text-blue-700 hover:underline transition-colors duration-200"
                 >
                   Contact
                 </a>
