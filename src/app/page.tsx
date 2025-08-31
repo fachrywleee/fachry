@@ -22,10 +22,10 @@ export default function Home() {
       >
         {/* Navbar */}
         <nav className="sticky top-0 z-50 bg-gradient-to-r from-blue-100 via-white to-blue-100/80 border-b border-blue-200 shadow-lg backdrop-blur-lg rounded-b-xl transition-colors duration-500">
-          <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center md:justify-between text-xl">
+          <div className="container mx-auto px-4 py-4 flex items-center justify-between text-xl">
             <Link
               href="/"
-              className="flex items-center hover:scale-105 transition-transform duration-200 mb-2 md:mb-0"
+              className="flex items-center hover:scale-105 transition-transform duration-200"
             >
               <Image
                 src="/logo.png"
@@ -35,7 +35,7 @@ export default function Home() {
                 className="mr-2"
               />
             </Link>
-            <ul className="flex flex-col md:flex-row gap-4 md:gap-10 text-blue-900 font-bold items-center">
+            <ul className="flex gap-10 text-blue-900 font-bold">
               <li>
                 <a
                   href="#about"
