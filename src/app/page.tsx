@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const pageVariants = {
@@ -22,7 +23,7 @@ export default function Home() {
         {/* Navbar */}
         <nav className="sticky top-0 z-50 bg-white/80 border-b border-blue-200 shadow-sm backdrop-blur transition-colors duration-500">
           <div className="container mx-auto px-0 py-3 flex items-center justify-between text-base">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Fachry Logo"
@@ -30,7 +31,7 @@ export default function Home() {
                 height={64}
                 className="mr-2"
               />
-            </a>
+            </Link>
             <ul className="flex gap-8 text-blue-900 font-semibold text-xl">
               <li><a href="#about" className="hover:underline transition-colors">About</a></li>
               <li><a href="#skills" className="hover:underline transition-colors">Skills</a></li>
@@ -53,10 +54,10 @@ export default function Home() {
                   />
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 transition-colors duration-500">
-                  Hi, I'm Fachry
+                  Hi, I&apos;m Fachry
                 </h1>
                 <p className="text-xl md:text-2xl text-blue-700 mb-8 transition-colors duration-500">
-                  A Highschool Student & Aspiring Developer
+                  A Highschool Student &amp; Aspiring Developer
                 </p>
               </div>
               {/* About Section */}
@@ -66,11 +67,11 @@ export default function Home() {
                 </h2>
                 <div className="bg-blue-50 rounded-xl p-8 shadow transition-colors duration-500">
                   <p className="text-lg text-blue-800 leading-relaxed mb-4 transition-colors duration-500">
-                    Welcome! I'm a highschool student who loves creating simple, elegant solutions. 
+                    Welcome! I&apos;m a highschool student who loves creating simple, elegant solutions. 
                     I enjoy building clean user experiences and tackling interesting problems.
                   </p>
                   <p className="text-lg text-blue-800 leading-relaxed transition-colors duration-500">
-                    When I'm not coding, I play games and hang out with my friends!
+                    When I&apos;m not coding, I play games and hang out with my friends!
                   </p>
                 </div>
               </section>
@@ -127,7 +128,7 @@ export default function Home() {
             {/* Contact Section */}
             <section id="contact" className="text-center">
               <h2 className="text-3xl font-bold text-blue-900 mb-6 transition-colors duration-500">
-                Let's Connect
+                Let&apos;s Connect
               </h2>
               <div className="bg-blue-50 rounded-xl p-8 shadow transition-colors duration-500">
                 <p className="text-lg text-blue-800 mb-6 transition-colors duration-500">
